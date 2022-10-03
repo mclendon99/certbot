@@ -14,7 +14,8 @@ override the environment entries.
 
 The following scripts are supplied:
 
-* generate-cert.sh - genera the godaddy A record if different than your external IP. 
+* generate-cert.sh - generate/replafe the godaddy A record if different than your external IP. 
               The script takes no arguments.
 * certbot-tar.sh - Generate a tarball with all the certbot generated information. Useful
-              for putting the certificates onto another system.
+              for putting the certificates onto another system. The script takes no
+              arguments.
