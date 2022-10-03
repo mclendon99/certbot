@@ -5,7 +5,7 @@ Bash is required as the scripts use the [[ operator.
 
 The certbot.conf file is of the form:
 
-MYDOMAIN=\'Replace with your domain name (just the domain part - not the host part).\'
+MYDOMAIN=\\'Replace with your domain name (just the domain part - not the host part).\\'
 
 Note that the quotes must be escaped.
 
