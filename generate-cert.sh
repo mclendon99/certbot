@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # set -x
 # This script will generate or renew a  certbot certificate for the specified MYDOMAIN manually.
 # Use the ddns-acme.sh script to put the ACME challenge onto godaddy.

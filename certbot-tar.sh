@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 cd /
 sudo tar czf certs.tgz /var/log/letsencrypt /etc/letsencrypt
 echo 'Generated /certs.tgz (root directory). Move it somewhere else.'
