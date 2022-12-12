@@ -10,13 +10,17 @@ then
     exit -1
 fi
 
-# Support env variables as well as config file
-[ -f ./certbot.conf ] && . ./certbot.conf
-
+# Check environment first. Still no domain? Try the config file
+if [[ -z $MYDOMAIN  ]]
+then
+  [ -f ./certbot.conf ] && . ./certbot.conf
+fi
+# Still no domain, exit
 if [[ -z $MYDOMAIN  ]]
 then
     echo "Must supply MYDOMAIN in environment or certbot.conf file. Exiting!"
     exit -2
 fi
 # 
-sudo certbot -d '$MYDOMAIN'  --manual --preferred-challenges dns certonly
+echo Using domain $MYDOMAIN
+sudo certbot -d $MYDOMAIN  --manual --preferred-challenges dns certonly
