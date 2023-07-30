@@ -11,16 +11,16 @@ then
 fi
 
 # Check environment first. Still no domain? Try the config file
-if [[ -z $MYDOMAIN  ]]
+if [[ -z $GDDOMAIN  ]]
 then
   [ -f ./certbot.conf ] && . ./certbot.conf
 fi
 # Still no domain, exit
-if [[ -z $MYDOMAIN  ]]
+if [[ -z $GDDOMAIN  ]]
 then
-    echo "Must supply MYDOMAIN in environment or certbot.conf file. Exiting!"
+    echo "Must supply GDDOMAIN in environment or certbot.conf file. Exiting!"
     exit -2
 fi
 # 
-echo Using domain $MYDOMAIN
-sudo certbot -d $MYDOMAIN  --manual --preferred-challenges dns certonly
+echo Using domain $GDDOMAIN
+sudo certbot -d $GDDOMAIN  --manual --preferred-challenges dns certonly
