@@ -9,7 +9,7 @@ GDDOMAIN=\\'Replace with your domain name (just the domain part - not the host p
 
 Note that the quotes must be escaped.
 
-The configuration items can also be read from the environment. The config file items 
+The configuration items can also be read from the environment. The config file items
 override the environment entries.
 
 The following scripts are supplied:
