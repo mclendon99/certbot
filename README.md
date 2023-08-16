@@ -7,7 +7,7 @@ The certbot.conf file is of the form:
 
 GDDOMAIN=\\'Replace with your domain name (just the domain part - not the host part).\\'
 
-Note that the quotes must be escaped.
+Note that the quotes must be escaped with a backslash. An example certbot.conf.example file is included in the repository.
 
 The configuration items can also be read from the environment. The config file items
 override the environment entries.
