@@ -1,8 +1,8 @@
 #!/bin/bash
 # set -x
-# This script will generate or renew a  certbot certificate for the specified MYDOMAIN manually.
+# This script will generate or renew a  certbot certificate for the specified GDDOMAIN manually.
 # Use the ddns-acme.sh script to put the ACME challenge onto godaddy.
-# Note that MYDOMAIN may contain multiple domains (with wildcards), e.g. "somedomain.com,*.somedomain.com",
+# Note that GDDOMAIN may contain multiple domains (with wildcards), e.g. "somedomain.com,*.somedomain.com",
 # so put it in escaped quotes, e.g. \'mydomain.org\'.
 if [[ $# -gt 0 ]]
 then
